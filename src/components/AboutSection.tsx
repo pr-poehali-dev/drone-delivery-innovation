@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Индивидуальный подход", description: "Нахожу путь к каждому ученику, учитывая его темп и особенности восприятия" },
+  { title: "Глубокие знания", description: "Даю не просто факты, а понимание исторических процессов и закономерностей" },
+  { title: "Практика и результат", description: "Разбираем реальные задания ЕГЭ/ОГЭ, тренируемся на типовых вопросах экзамена" },
+  { title: "Доступное объяснение", description: "Сложные темы объясняю простым языком с примерами из жизни" },
+  { title: "Поддержка и мотивация", description: "Помогаю преодолеть страх перед экзаменом и поверить в свои силы" },
+  { title: "Актуальные материалы", description: "Использую современные методики и обновлённые учебные материалы" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "10+", label: "Лет опыта" },
+  { number: "200+", label: "Выпускников" },
+  { number: "95%", label: "Сдают на 70+ баллов" },
+  { number: "100%", label: "Индивидуальных программ" },
 ]
 
 export function AboutSection() {
@@ -27,19 +27,19 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О педагоге
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Педагогика, которая{" "}
             <span className="text-primary relative">
-              впечатляет
+              вдохновляет
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            Более 10 лет я помогаю ученикам открывать для себя историю и обществознание — не как набор дат и фактов, а как живую науку о людях, событиях и смыслах.
           </p>
         </div>
 

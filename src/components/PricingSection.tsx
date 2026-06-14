@@ -4,39 +4,39 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Разовое занятие",
+    price: "1 500",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "60 минут с педагогом",
+      "Разбор конкретной темы",
+      "Домашнее задание",
+      "Материалы к занятию",
+      "Обратная связь после урока",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Подготовка к ЕГЭ/ОГЭ",
+    price: "5 500",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "4 занятия в месяц",
+      "Индивидуальная программа",
+      "Разбор всех типов заданий",
+      "Пробные экзамены",
+      "Проверка сочинений и эссе",
+      "Поддержка в мессенджере",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Интенсив",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
-      "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Гибкое расписание",
+      "Углублённая программа",
+      "Олимпиадная подготовка",
+      "Приоритетная запись",
+      "Анализ пробного ЕГЭ",
     ],
     highlighted: false,
   },
@@ -60,10 +60,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">удобный формат</span> занятий
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Онлайн и офлайн — занимайтесь там, где вам удобно
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Обсудить программу" : "Записаться"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +121,7 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Первое пробное занятие — <span className="text-primary font-semibold">бесплатная диагностика</span> уровня знаний
           </p>
         </div>
       </div>
